@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Company Profile</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap">
+    </head> 
+    <body>
+    <header class="header-wrapper">
+        <img src="assets/logo.svg" alt="logo" class="logo">
+        <div class="nav-bar">
+        <div class="nav-item">Home</div>
+        <div class="nav-item"><a style="text-decoration: none" href="profil.html">Our Profile </a></div>
+        <div class="nav-item">Portofolio</div>
+        <div class="nav-item"><a style="text-decoration: none" href="#contactForm"> Message Us</a>
+        </div>
+     </nav>
+    </header>
+<!-- hero -->
+    <section id="hero" class="hero">
+        <main class="content">
+            <h1 id="welcomeMessage">Hi, <span id="userName"></span>Welcome To Website!!</h1>
+            <h2><b>Ini Adalah Website PT. Lancar Jaya</b></h2>
+        
+    </main>
+    </section>
+    <!-- akhir hro -->
+        <div id="headquarters-section">
+           <div class="Headquarters">
+            <h1> Our Headquarters</h1>
+         </div>
+            <div class="wrapper">
+            <div class="headquarters-image-container">
+                <div class="headquarters-image-bandung"></div><p>Bandung</p>
+            </div>
+            <div class="headquarters-image-container">
+                <div class="headquarters-image-jakarta"></div><p>Jakarta</p>
+            </div>
+            <div class="headquarters-image-container">
+                <div class="headquarters-image-yogyakarta"></div><p>Yogyakarta</p>
+            </div> 
+            </div>  
+        </div>
+
+
+        <main class="contact">
+            <div>
+        <form id="contactForm"  onsubmit="submitForm(event)">
+            <h1>Message Us</h1>
+            <div class="form-group">
+            <tr>
+                <td><label for="name">Nama</label></td>
+                <td>:</td>
+                <td><input type="text" id="name" placeholder="Nama" required></td>
+            </tr>
+        </div>
+
+        <div>
+            <tr class="form-group">
+            <td><label for="birthdate">Tanggal Lahir</label></td>
+            <td>:</td>
+            <td><input type="date" id="birthdate" required></td>
+            </tr>
+        </div>  <br>
+
+            <div class="form-group">
+                <td><label>Jenis Kelamin</label></td>
+                <td>:</td>
+                  <input type="radio" id="male" name="gender" value="Laki-laki" required>
+                  <label for="Laki-Laki">Laki-laki</label>
+                  <input type="radio" id="female" name="gender" value="Perempuan" required>
+                  <label for="Perempuan">Perempuan</label>
+                </div>
+
+        <div class="form-group">
+            <td><label for="message">Pesan</label></td>
+            <td>:</td>
+            <textarea id="message"  placeholder="Pesan" required></textarea>
+        </div>
+          
+            <button id="kirim" type="submit">Kirim</button>
+          </form>
+
+
+          <div id="submittedData" style="display:none">
+            <h2>Data yang dikirim:</h2>
+            <p><strong>Nama:</strong> <span id="submittedName"></span></p>
+            <p><strong>Tanggal Lahir:</strong> <span id="submittedBirthdate"></span></p>
+            <p><strong>Jenis Kelamin:</strong> <span id="submittedGender"></span></p>
+            <p><strong>Pesan:</strong> <span id="submittedMessage"></span></p>
+          </div>
+
+        </div>
+        </main>
+     
+    
+    <footer class="footer">
+        <div class="footer-content">
+            <b> &copy; PT. Lancar Jaya   2023  </b> 
+        </div>
+      </footer>
+
+    <script src="js/script.js"></script>
+    
+</body>
+</html>

@@ -1,0 +1,257 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-bar{
+    display: flex;
+    border: 1px solid black;
+    border-radius: 5px;
+    box-shadow: -1px 4px 17px -4px rgba(0,0,0,0.75);
+    -webkit-box-shadow: -1px 4px 17px -4px rgba(0,0,0,0.75);
+    -moz-box-shadow: -1px 4px 17px -4px rgba(0,0,0,0.75);
+    position: relative;
+    
+}
+
+
+.nav-item {
+    padding: 5px 1em;
+    width: 100px;
+    border-right: 1px solid black;
+    text-align: center;
+    cursor: pointer;
+    position: relative;
+    font-family: 'Poppins', Arial, sans-serif;
+
+}
+
+.nav-item:hover {
+    background: rgb(168, 247, 247);
+    margin: -3px;
+   border-radius: 10px;
+    
+
+}
+
+.nav-bar:last-child {
+    border-right: none;
+}
+
+.logo {
+    
+    padding:0 20px;
+    display: flex;
+  
+    
+}
+
+.hero{
+    min-height: 150vh;
+    display: flex;
+    align-items: center;
+    background-image: url(../assets/hero.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+
+   
+
+
+
+}
+.hero ::after {
+    content:'';
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(0deg,rgba(255, 255, 255, 0) 7% rgba(255, 255,255, 0) 35%);
+    
+
+}
+
+.hero .content {
+    padding: 1.5rem 8%;
+    max-width: 60rem;
+}
+
+
+.Headquarters {
+    padding:5em
+}
+
+
+
+.wrapper {
+    display: flex;
+    margin:2em;
+    margin-top:-20px;
+    
+    
+}
+
+.headquarters-image-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 3em;
+}
+
+.headquarters-image-bandung {
+    height: 5em;
+    width: 5em;
+    border-radius: 50%;
+    overflow: hidden;
+    background-image: url("..//assets/bandung.jpg");
+    border: 1px solid black;
+    background-size: cover;
+    background-position: center;
+}
+
+.headquarters-image-jakarta {
+    height: 5em;
+    width: 5em;
+    border-radius: 50%;
+    overflow: hidden;
+    background-image: url("..//assets/jakarta.jpg");
+    border: 1px solid black;
+    background-size: cover;
+    background-position: center;
+}
+
+
+.headquarters-image-yogyakarta {
+    height: 5em;
+    width: 5em;
+    border-radius: 50%;
+    overflow: hidden;
+    background-image: url("..//assets/yogyakarta.jpg");
+    border: 1px solid black;
+    background-size: cover;
+    background-position: center;
+}
+
+
+.form-group {
+    margin-bottom: 10px;
+    font-family: 'Poppins', Arial, sans-serif;
+    
+  }
+
+
+
+  #contactForm {
+    padding-left: 5em;
+    position: relative;
+    
+  }
+
+  #submittedData {
+    padding-right: 15em;
+
+  }
+  .contact {
+  flex-direction:row ;
+    display: flex;
+    position: relative;
+    
+  }
+
+
+  .contact > div
+{
+    display: flex;
+    flex: 2;
+    align-content: center;
+    justify-content:space-between;
+    position: relative;
+}
+
+span{
+    font-weight: bold;
+   
+}
+
+.massegeus {
+    padding: 5em;
+    
+}
+
+#kirim {
+    padding: 0.5em;
+    width:300px ;
+    cursor: pointer;
+}
+
+
+.footer {
+    display: flex;
+    justify-content: flex-end;
+    padding: 30px;
+}
+
+.footer-content {
+    margin-left: auto;
+}
+
+
+
+
+#body {
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  h1 {
+    font-family: 'Poppins', Arial, sans-serif;
+  }
+
+  h2 {
+    font-family: 'Poppins', Arial, sans-serif;
+  }
+
+  p {
+    font-family: 'Poppins', Arial, sans-serif;
+  }
+
+  b {
+    font-family: 'Poppins', Arial, sans-serif;
+  }
+
+
+/* mobile */
+@media only screen and (max-width: 600px) {
+
+    .header-wrapper{
+        flex-direction: column;
+    }    
+
+      .nav-bar {
+        width: 100%;
+        flex-direction: column;
+    }
+    .nav-item {
+        width: 100%;
+    }
+
+    .nav-item:hover {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .nav-bar:last-child {
+        flex-direction: column;
+    }
+
+    .logo {
+        margin-bottom: 14px;
+        margin-left: 20px;
+    }
+
+    html {
+        width: 200%;
+    }
+
+    
+}
